@@ -37,10 +37,10 @@ button{
 
 
 :root{
-    --bg-header: #EEEEEE
+    --bg-header: #EEEEEE;
     --color-primary: #018762;
-    --bg-page: #FFFFFF
-    --color-reference-text: #515151
+    --bg-page: #FFFFFF;
+    --color-reference-text: #515151;
 }
 `
 

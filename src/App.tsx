@@ -1,23 +1,25 @@
 import React from 'react';
-import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { styled } from 'styled-components';
+import { Home } from './pages/home';
+import Header from './components/Header';
 
+const AppPage = styled.div`
+  height: 100vh;
+  width: 100vw;
+  
+`
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">        
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppPage className="App">
+    <BrowserRouter>
+    <Header />
+    <Routes>
+      <Route path='/' element={<Home />} />
+    </Routes>
+    </BrowserRouter>
+    </AppPage>
   );
 }
 
