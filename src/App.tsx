@@ -5,6 +5,7 @@ import { Home } from './pages/home';
 import Header from './components/Header';
 import { UserPerson } from './pages/user-pserson';
 import { Professional } from './pages/professional';
+import Footer from './components/Footer';
 
 const AppPage = styled.div`
   // height: 100vh;
@@ -26,6 +27,7 @@ function App() {
     <Routes>
       <Route path='/profissional' element={<Professional />} />
     </Routes>
+    <Footer />
     </BrowserRouter>
     </AppPage>
   );

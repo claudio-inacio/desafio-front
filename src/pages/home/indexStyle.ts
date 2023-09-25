@@ -5,7 +5,7 @@ export const Container = styled.body`
      @media(max-width: 520px){
           padding: 1rem 1rem 0px;
           flex-direction: column; 
-          max-height: 750px;
+          
           align-items: center;
           justify-content: start ;  
      }
@@ -23,6 +23,7 @@ export const Container = styled.body`
      }
      display: flex;
      height: 100%;
+     max-height: 600px;
      
      
 `;

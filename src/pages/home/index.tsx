@@ -8,7 +8,6 @@ export const Home = () => {
   return (
   
     <Container>
-    
       <Description>
         <Tittle>Boas Vindas a Lacrei Saúde </Tittle>
         <Message>Uma plataforma segura e acolhedora para comunidade LGBTQIAPN+</Message>
