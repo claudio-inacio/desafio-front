@@ -1,151 +1,107 @@
-import { NavLink } from "react-router-dom";
-// import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 
-export const Container = styled.body`  
-     @media(max-width: 1040px){
-          flex-direction: column;          
-          justify-content: start ;  
+export const Container = styled.body` 
+     @media(max-width: 520px){
+          padding: 1rem 1rem 0px;
+          flex-direction: column; 
+          max-height: 750px;
           align-items: center;
+          justify-content: start ;  
+     }
+     @media (min-width: 521px) and (max-width: 1040px){
+          flex-direction: column;  
+          padding: 2rem 2rem 0px;
+          align-items: center;
+          max-height: 630px;
+          justify-content: start ;  
      }
      @media(min-width: 1041px){
-          flex-direction: row;          
-          justify-content: start ; 
-          align-items: start;
-          height: 500px;
-          
+          padding: 4rem 4rem 0px;
+          max-height: 421px;
+          justify-content: space-between ; 
      }
      display: flex;
-     width: 100%;
-     height: 100vw;
+     height: 100%;
      
      
 `;
-export const Description = styled.section`  
-     @media(max-width: 1040px){
-     width: 100%;
-     justify-content: center;
-     align-items: center;     
-     max-height: 250px;
-     max-width: 700px;
+export const Description = styled.section`
+     @media(max-width: 520px){
+          max-width: 540px;
+     }
+     @media(min-width: 521px) and (max-width: 1040px){
+          max-width: 540px;
      }
      @media(min-width: 1041px){
-          width: 60%;
-          max-width: 600px;
+          max-width: 540px;
      }
+     width: 100%;
 `;
 
-export const Tittle = styled.h1`  
-     @media(max-width: 1040px){
-          font-size: 24px;          
+export const Tittle = styled.h2`  
+     @media(max-width: 520px){
+          font-size: 1.6rem;          
      }
      @media(min-width: 521px) and (max-width: 1040px){ 
-          font-size: 32px;        
+          font-size: 1.8rem;        
      }  
      @media(min-width: 1041px) { 
          font-size: 44px;
      }   
+     color: black;
   
-`;
-
-export const TitleContainer = styled.div`
-@media(max-width: 1040px){
-     margin-top: 15px;
-     margin-left: 25px;
-}
-@media(min-width: 521px) and (max-width: 1040px){ 
-     padding: 2rem 3rem 0px  3rem
-}    
-@media(min-width: 1041px) { 
-     padding: 3rem 1rem 0px  3rem
-}    
 `
-export const MessageContainer = styled.div`
-@media(max-width: 1040px){
-     margin-top: 20px;
-     margin-left: 25px;
-}
-@media(min-width: 521px) and (max-width: 1040px){ 
-     padding: 0px 3rem 0px  3rem
-}  
-@media(min-width: 1041px) { 
-     padding: 2rem 3rem 0px  3rem
-}   
-   
+export const Message = styled.p`
+     @media(max-width: 520px){
+          font-size: 0.90rem;
+          margin-top: 1rem;              
+     }
+     @media(min-width: 521px) and (max-width: 1040px){ 
+          font-size: 1rem;  
+          padding: 1.5rem 2rem 0rem 0px;
+     }  
+     @media(min-width: 1041px) { 
+          font-size: 1.5rem;
+          padding-top: 3rem;
+      }   
 `
-export const Message = styled.text`
-@media(max-width: 1040px){
-     font-size: 14px;   
-}
-@media(min-width: 521px) and (max-width: 1040px){ 
-     font-size: 16px;        
-}  
-@media(min-width: 1041px) { 
-     font-size: 1.5rem;
- }   
-color: var(--color-reference-text)
-   
-`
-
-export const DescriptionButtons = styled.div`  
+ 
+ export const ButtonContainer = styled.div`  
      @media(max-width: 520px){ 
           flex-direction: column;
-          justify-content: center;          
+          justify-content: space-between;          
           align-items: center;
-          height: 50%;
-     }     
+          margin-top: 1.8rem;
+          max-width: 450px;
+}     
      @media(min-width: 521px) and (max-width: 1040px){ 
-          margin-top: 40px;
-          margin-left: 40px;
-          width: 100%;
+          margin-top: 2rem;
+          max-width: 455px;          
           flex-direction: row;
-          justify-content: space-evenle;          
-     }     
+          align-items: start;
+          justify-content: space-around;          
+}     
+     
      @media(min-width: 1041px) { 
-          padding: 2rem 1rem 0px  2rem;
-          // margin-left: -55px;
-          // background-color: red;
-          justify-content: space-around
+          padding: 3.5rem 0rem 0rem;
+          justify-content: space-between;
       }   
      display: flex;
+     width: 100%;
 `;
 
-export const InfoComplementary = styled.aside`  
-     @media(max-width: 1040px){
-          max-width: 700px;
-          max-height: 700px;
-          width: 100%;
-          height: 100%;
-          margin-top: 30px;
-     }
-     @media(min-width: 1041px){
-          width: 50%;
-          display: flex;
-          justify-content: center;
-          margin-top: 70px;
-          align-items: center;
-     }
+   
+export const ImageContainer = styled.aside`  
+     max-width: 540px;
+     height: 450px;
+     max-height: 450px;          
+     padding-top: 2rem;
 `;
-
 
 export const HomeImage = styled.img`
-@media(min-width: 1041px){
-     height: 80%;
-     max-width: 540px;
-     max-height: 540px;
-     width: 80%;
-}
-@media(min-width: 1041px){
-     max-width: 540px;
-     max-height: 540px;
-}
+     width: 100%;
 
 `
-export const Divider = styled.div` 
-     height: 1px;
-     width: 90%;
-     background-color:var(--color-primary);
-`;
 
 

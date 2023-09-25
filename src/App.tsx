@@ -7,8 +7,8 @@ import { UserPerson } from './pages/user-pserson';
 import { Professional } from './pages/professional';
 
 const AppPage = styled.div`
-  height: 100vh;
-  width: 100vw;
+  // height: 100vh;
+  // width: 100vw;
   
 `
 function App() {

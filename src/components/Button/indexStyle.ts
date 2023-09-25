@@ -6,7 +6,7 @@ interface Props{
 
 export const Container = styled.button<Props>` 
 @media(min-width: 521px) and (max-width: 1040px){ 
-     margin-left: 50px;
+     // margin-left: 50px;
 
 }   
 
