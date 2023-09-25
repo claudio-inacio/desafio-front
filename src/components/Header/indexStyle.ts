@@ -1,14 +1,13 @@
+import { NavLink } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-interface Props{
-     selected?: boolean;
-}
 
-export const Container = styled.div`  
+export const Container = styled.header`  
      @media(max-width: 520px){
           flex-direction: column;
           height: 80px;
-          justify-content: center   
+          justify-content: center     
      }
      align-items: center;
      display: flex;
@@ -21,43 +20,54 @@ export const Container = styled.div`
      
 `;
 
-export const Tittle = styled.a`
-@media(max-width: 520px){}
+export const Tittle = styled(NavLink)`
+@media(max-width: 520px){
+}
      color: var(--color-primary);
      width: 89px;
      height: 45px;
      font-size: 32px;
      font-weight: bold;
      margin-left: 32px;
+     cursor: pointer;
+     text-decoration: none;
+     &:hover{
+          opacity: 0.7;
+     }
 `
 export const NavBar = styled.nav`
 @media(max-width: 520px){
      justify-content: center;
+     margin-botton: 50px;
+   
+    
 }
      display: flex;
      justify-content: end;     
      width: 100%;     
 `
 
-export const NavItem = styled.li`
+
+export const NavText = styled(NavLink)`
      @media(max-width: 520px){
+          padding-left: 10px;
           font-size: 0.85rem;
-     }         
-     margin-left: 10px;
+     }
+     padding-left: 10px;
+     color: black;
      font-weight: bold;
+     cursor: pointer;
+     padding-right: 10px;
      list-style: none;
-     
+     &:hover{
+          opacity: 0.7;
+     };
+     &.active{
+     color: var(--color-primary);
+     };
      &:last-child{
      margin-right: 15px;
-     }
-`
-
-export const NavText = styled.a<Props>`
-     @media(max-width: 520px){
-          padding: 0px;
-     }
-     color: ${props => props.selected ? 'var(--color-primary)': 'black'};
-     padding-left: 10px;
-     padding-right: 10px;
+     };
+     text-decoration: none;
 
 `

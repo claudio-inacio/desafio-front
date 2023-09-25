@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { styled } from 'styled-components';
 import { Home } from './pages/home';
 import Header from './components/Header';
+import { UserPerson } from './pages/user-pserson';
+import { Professional } from './pages/professional';
 
 const AppPage = styled.div`
   height: 100vh;
@@ -17,6 +19,12 @@ function App() {
     <Header />
     <Routes>
       <Route path='/' element={<Home />} />
+    </Routes>
+    <Routes>
+      <Route path='/pessoa-usuaria' element={<UserPerson />} />
+    </Routes>
+    <Routes>
+      <Route path='/profissional' element={<Professional />} />
     </Routes>
     </BrowserRouter>
     </AppPage>

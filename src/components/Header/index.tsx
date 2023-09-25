@@ -1,25 +1,20 @@
 import React from 'react';
-import {Container, NavBar, NavItem, NavText, Tittle} from './indexStyle';
+import {Container, NavBar, NavText, Tittle} from './indexStyle';
+
 
 
 const Header = () => {
     return(
        <Container>
-        <Tittle>Lacrei</Tittle>
+        <Tittle to='/'>Lacrei</Tittle>
         <NavBar>
-            
-                <NavItem>
-                    <NavText selected={true}>Home</NavText>
-                </NavItem>
-                <NavItem>
-                    <NavText selected={false}>
-                        Pessoa Usúaria
-                    </NavText>
-                </NavItem>
-                <NavItem>
-                    <NavText selected={false}>Profissional</NavText>
-                </NavItem>
-            
+            <NavText to="/">
+                Home
+            </NavText>
+            <NavText  to="/pessoa-usuaria">
+                Pessoa Usuária
+            </NavText>
+             <NavText to="/profissional" >Profissional</NavText>
         </NavBar>
        </Container>            
     )  
