@@ -13,8 +13,8 @@ export const Container = styled.footer`
      align-items: center;
      justify-content: start;
      border-top: 2px solid var(--color-primary);
-     margin-left: 2rem;
-     margin-right: 2rem;
+     margin-left: 4rem;
+     margin-right: 4rem;
      max-width: 100%;          
      height: 100%;
      display: flex;
@@ -26,11 +26,11 @@ export const FooterNavBar = styled.nav`
 @media(max-width: 520px){
      flex-direction: column;
      justify-content: center;
-     gap: 10px;
+     gap: 2px;
 }
      flex-direction: row;
      display: flex;
-     padding: 30px 0px 0rem;
+     padding: 10px 0px 0rem;
      gap: 40px;
      justify-content: start;     
      width: 100%;     
@@ -39,7 +39,7 @@ export const FooterNavBar = styled.nav`
 export const NavText = styled(NavLink)`
      @media(max-width: 520px){
           padding: 3px;
-          font-size: 1rem;
+          font-size: 0.90rem;
      }
      color: black;
      cursor: pointer;
